@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "Inter", system-ui;
+}
+
+header{
+  z-index: 10001 !important;
+}
+
+.btn-primary{
+  @apply px-6 py-2 bg-brandPrimary text-white rounded hover:bg-neutralDGrey transition-all duration-300;
+}
+
+.card{
+  @apply md:w-1/5 flex flex-col items-center text-center px-4 py-8 md:h-80 rounded-md shadow cursor-pointer hover:translate-y-5 hover:border-b-4 hover:border-indigo-700  transition-all duration-300
+}
